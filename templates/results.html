@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.E Tracker</title>
+    
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='form.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='bars.css') }}">
+    <link rel="stylesheet"type= "text/css" href= "{{ url_for('static',filename='multi.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+      
+      !function() {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+        }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('8f3tfecmenkc');
+      </script>
+      <!-- End of Async Drift Code -->
+
+  </head>
+  <body onload="run()">
+ <!-- Navbar Section -->
+ <nav class="navbar">
+  <div class="navbar__container">
+    <a href="#home" id="navbar__logo">B.E TRACKER</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+       <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+         <a href="\" class="navbar__links" id="home-page" >Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="\results" class="navbar__links" id="results-page" >Results</a>
+      </li>
+      <li class="navbar__item">
+        <a href="\recommendations" class="navbar__links" id="recommendations-page" >Recommendations</a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+<!-- End Navbar Section-->
+   <!-- Results Section -->
+    <div class="main" id="results">
+       
+      <div class="main__container">
+         <!-- LEVELS PROGRESS BARS-->
+       <div class="container">
+        <h2 id="info1">Results </h2>
+        {%if data==1%}
+        <h1>Normal<h2>
+          
+  <div id="outerbar">
+  <div id="innerbar" style="background-image: linear-gradient(to right,rgba(255,0,0,0),rgb(14, 206, 132));">
+    <br>
+    </div>
+    </div>
+    <div id="text">1%</div>
+<script>
+  function run()
+{
+  var mac= document.getElementById("innerbar");
+  var tex=document.getElementById("text");
+  var width=1;
+  var id=setInterval(ref,20);
+  function ref()
+  {
+    if (width>=25)
+    {
+      clearInterval(id);
+    }
+    else
+    {
+      width++;
+      mac.style.width = width+ '%';
+      tex.innerHTML = width + '%';
+    }
+  }
+}
+</script>
+
+  {%elif data==2%}
+  <h1>Mild Binge Eating</h2>          
+  <div id="rank1">
+  <div id="rank2" style="background-image: linear-gradient(to right,rgba(255,0,0,0),rgb(219, 240, 32));">
+    <br>
+    </div>
+    </div>
+    <div id="text">1%</div>
+<script>
+  function run()
+{
+  var mac= document.getElementById("rank2");
+  var tex=document.getElementById("text");
+  var width=1;
+  var id=setInterval(ref,20);
+  function ref()
+  {
+    if (width>=50)
+    {
+      clearInterval(id);
+    }
+    else
+    {
+      width++;
+      mac.style.width = width+ '%';
+      tex.innerHTML = width + '%';
+    }
+  }
+}
+</script>       
+{%elif data==3%}
+<h1>Binge Eating</h2>              
+<div id="bar1">
+<div id="bar2" style="background-image: linear-gradient(to right,rgba(236, 252, 8, 0.959),#FFA500);">
+    <br>
+    </div>
+    </div>
+    <div id="text">1%</div>
+<script>
+  function run()
+{
+  var mac= document.getElementById("bar2");
+  var tex=document.getElementById("text");
+  var width=1;
+  var id=setInterval(ref,20);
+  function ref()
+  {
+    if (width>=75)
+    {
+      clearInterval(id);
+    }
+    else
+    {
+      width++;
+      mac.style.width = width+ '%';
+      tex.innerHTML = width + '%';
+    }
+  }
+}
+</script>
+{%elif data==4%}
+<h1>Extreme Binge Eating</h2>
+<div id="outer1">
+<div id="inner2" style="background-image: linear-gradient(to right,rgba(255,0,0,0),rgb(216, 13, 13));">
+<br>
+</div>
+    </div>
+    <div id="text">1%</div>
+<script>
+  function run()
+{
+  var mac= document.getElementById("inner2");
+  var tex=document.getElementById("text");
+  var width=1;
+  var id=setInterval(ref,20);
+  function ref()
+  {
+    if (width>=100)
+    {
+      clearInterval(id);
+    }
+    else
+    {
+      width++;
+      mac.style.width = width+ '%';
+      tex.innerHTML = width + '%';
+    }
+  }
+}
+</script>
+{%endif%} 
+    <button style="color:black" type="submit" class="recommend-btn" ><a href="\recommendations" class="navbar__links" id="recommendations-page"
+        >Get Tips</a></button>  
+    
+  </div>    
+    </div>
+  </div>
+
+    <script type = "text/javascript" 
+    src = "{{ url_for('static', filename = 'js/app.js') }}" ></script>
+    <script type = "text/javascript" 
+    src = "{{ url_for('static', filename = 'js/main.js') }}" ></script>
+    <script type = "text/javascript" 
+    src = "{{ url_for('static', filename = 'js/script.js') }}" ></script>
+  </body>
+</html>     

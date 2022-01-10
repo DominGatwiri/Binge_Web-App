@@ -1,0 +1,348 @@
+/*  Hide form by default */
+.form-box{
+  width: 380px;
+  height: 440px;
+  left: 50%;
+  top: 52%;
+  position: absolute;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5%;
+  overflow: hidden;
+  transform:translate(-50%, -50%);
+ /*display:none; */
+
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #8e2de2,#4a00e0);
+    border-radius: 30px;
+    transition: .5s ;
+
+}
+.social-icons{
+
+    text-align: center;
+}
+.social-icons img{
+    width: 48px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.input-grp{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s ;
+}
+.input-field{
+    width: 100%;
+    padding:10px 0;
+    margin: 5px auto;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor : pointer;
+    display: block;
+    margin-top: 30px;
+    background: linear-gradient(to right, #8e2de2,#4a00e0);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    position: absolute; 
+
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+
+.start__btn {
+  font-size: medium;
+  background: transparent; 
+  padding: 15px 0px;
+  border:100px;
+  border-radius: 25px; 
+  border: 2px solid #9518fc; 
+  margin: 20px 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: 70px;
+  color: #fff;
+  width: 180px;
+  overflow: hidden;
+  }
+  span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  } 
+ 
+  .start__btn:hover span{
+    width: 100%;
+  }
+  
+ .start__btn:hover {
+  background:linear-gradient(to right, #8e2de2,#4a00e0); 
+  transition: all 0.35s;
+  }  
+  
+ .start__btn:hover:after {
+    width: 100%;
+  }
+  /* Continue with details btn*/
+  .continue__btn{
+    position: relative;
+    margin-top: 6rem;
+    border:0;
+    border-radius: 30px; 
+    padding: 10px 40px;
+    font-size: .9rem;
+    cursor: pointer;
+    outline: 70px;
+    transition: all 0.35s;
+    background: transparent; 
+     background: linear-gradient(to right, #8e2de2,#4a00e0);
+  }
+  .continue__btn a {
+    position: relative;
+   z-index: 2;
+   color: #fff;
+   text-decoration: none;   
+   }
+   
+   .continue__btn:after {
+   position: absolute;
+   z-index: -2;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background:transparent;
+   transition: all 0.35s;
+   border-radius: 4px;
+   }
+   
+   .continue__btn:hover {
+   color: #fff;
+   }
+   .continue__btn:hover:after {
+   width: 100%;
+   }
+
+  /*Gender */
+
+  .next__btn{
+    position: relative;
+    margin-top: 6rem;
+    border:0;
+    border-radius: 30px; 
+    padding: 10px 40px;
+    font-size: .9rem;
+    cursor: pointer;
+    outline: 70px;
+    transition: all 0.35s;
+    background: linear-gradient(to right, #8e2de2,#4a00e0);
+   
+}
+.next__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.next__btn:after {
+  position: absolute;
+  z-index: -2;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: transparent;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.next__btn:hover {
+  color: #fff;
+}
+.next__btn:hover:after {
+  width: 100%;
+}    
+
+  /*BMI Calculator*/
+  .bmi-box{
+    width: 350px;
+    height: 400px;
+    left: 50%;
+    top: 60%;
+    position: absolute;
+    margin: 6% auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform:translate(-50%, -50%);
+    display:none;  
+  
+    
+}
+.bmi-box h2 {
+  box-shadow: 1px 1px 20px #ec0cec7e;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight:600;
+  color: #777;
+}
+
+.text{
+  margin-top: 10px;
+    text-align: center;
+  
+}
+#w, #h {
+  color: #222f3e;
+  text-align: left;
+  font-size: 20px;
+  font-weight:200;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #999;
+  width: 200px;
+
+}
+#w:focus, #h:focus {
+  border-bottom: 1px solid rgb(95, 63, 105);
+  width: 300px;
+  transition: 0.5s;
+
+}
+#result{
+    color: #423969;
+    margin-top: 10px;
+}
+ 
+.input-field1{
+  width: 100%;
+    padding:10px ;
+    margin-top: 25px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+#bmi-btn{
+  font-family:inherit;
+  top: 20px;
+ margin-top: 10px;
+width: 150px;
+padding: 10px;
+cursor : pointer;
+display: block;
+margin: auto;
+background: linear-gradient(to right, #8e2de2,#4a00e0);
+border: 0;
+outline: none;
+border-radius: 30px;
+position: relative;
+color: #fff;
+}
+#info{
+  font-size: 12px;
+  font-family: inherit;
+  position: relative;
+  top: 40px;
+}
+
+.forward__btn{
+  position: relative;
+  margin-top: 5rem;
+  background: linear-gradient(to right, #8e2de2,#4a00e0);
+  border:0;
+  border-radius: 30px; 
+  padding: 10px 40px;
+  font-size: .9rem;
+  cursor: pointer;
+  outline: 70px;
+  transition: all 0.35s;
+
+}
+.forward__btn a {
+   position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;   
+}
+
+.forward__btn:after {
+  position: absolute;
+  z-index: -2;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+   transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.forward__btn:hover {
+  color: #fff;
+}
+.forward__btn:hover:after {
+  width: 100%;
+}                                      
+ 
+

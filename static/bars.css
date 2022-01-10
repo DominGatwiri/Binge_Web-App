@@ -1,0 +1,109 @@
+.container {
+    position:absolute;
+    left: 50%; 
+    width: 350px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    padding: 50px 30px;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    background-color: #fff;
+    border-radius: 10px; 
+    margin-top: 150px;
+}
+.container h2 {
+    margin-bottom: 50px;
+    color: #959595;
+}
+#info1 {
+    margin-bottom: 65px;
+    font-size: 18px;
+   color: #959595; 
+   box-shadow: 1px 1px 20px #ec0cec7e;
+   border-radius: 20px;
+   padding: 5px 5px;
+     
+}
+.container .skill {
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container .skill::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    display: block;
+    position: absolute;
+    background-color: #959595;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.container .skill .skill-bar:hover::before {
+    height: 100%;
+}
+
+.container .skill p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #1a1716;
+    margin: 0;
+}
+
+.container .skill .skill-bar {
+    width: 100%;
+    height: 15px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    animation: animated 1s both;
+}
+
+.container .skill .skill-bar.skill1 {
+    background-image: linear-gradient(109.6deg, rgb(71, 233, 152) 11.2%, rgb(6, 240, 45) 91.1%);
+    width: 25%;
+}
+
+.container .skill .skill-bar.skill2 {
+    background-image: linear-gradient(109.6deg, rgb(6, 240, 45) 11.3%, rgb(222, 247, 2) 100.2%);
+    width: 50%;
+}
+
+.container .skill .skill-bar.skill3 {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(222, 247, 2) 10%, rgb(218, 144, 7) 90%);
+    width: 75%;
+}
+
+.container .skill .skill-bar.skill4 {
+    background-image: linear-gradient(109.6deg, rgb(218, 144, 7) 11.2%, rgb(247, 21, 14) 91.1%);
+    width: 100%;
+}
+
+
+.container .skill .skill-bar span {
+    position:   absolute;
+    border-top: 5px ;
+    top: -1px;
+    font-size: 10px;
+    font-weight: 100;
+} 
+
+.container .skill .skill-bar.skill1 span.skill-count,
+.container .skill .skill-bar.skill2 span.skill-count,
+.container .skill .skill-bar.skill3 span.skill-count,
+.container .skill .skill-bar.skill4 span.skill-count,
+.container .skill .skill-bar.skill5 span.skill-count {
+    right: 0;
+}
+
+@keyframes animated {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: matrix3d(0, 0, 0);
+    }
+}
